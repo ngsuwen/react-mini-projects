@@ -1,0 +1,28 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#smallimage {
+  flex:1;
+  margin: 5px;
+  height: 100px;
+  width: 100px;
+  display: block;
+  cursor: pointer;
+  object-fit:cover;
+}
+
+#bigimage {
+  height: 300px;
+  width: 100%;
+  object-fit:cover;
+}
+
+#thumbnails {
+  position: relative;
+  display: block;
+  display:flex;
+  flex-wrap:wrap;
+
+}

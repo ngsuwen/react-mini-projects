@@ -1,0 +1,50 @@
+.Bedroom-1 { grid-area: br1; }
+.Bedroom-2 { grid-area: br2; }
+.Bedroom-3 { grid-area: br3; }
+.Kitchen { grid-area: kt; }
+.Bath-full { grid-area: fb; }
+.Bath-half { grid-area: hb; }
+.Living-Room { grid-area: lr; }
+.Oven { grid-area: on; }
+.Sink { grid-area: sk; }
+
+.FloorPlan {
+  display: grid;
+  grid-template-areas:
+    'br1 br1 lr lr on sk'
+    'br1 br1 lr lr kt kt'
+    'fb fb lr lr kt kt'
+    'br2 br2 hb br3 br3 br3'
+    'br2 br2 hb br3 br3 br3'
+    'br2 br2 hb br3 br3 br3';
+  height: calc(100vh);
+}
+
+.FloorPlan > div {
+  text-align: center;
+  font-size: 10px;
+}
+
+div[class^="Bedroom"] {
+  background-color:rgb(44,112,136);
+}
+
+div[class^="Bath"] {
+  background-color:rgb(113,135,49);
+}
+
+.Living-Room {
+  background-color: rgb(200,172,130);
+}
+
+.Kitchen {
+  background-color: rgb(241,167,59);
+}
+
+.Oven {
+  background-color: rgb(200,70,23);
+}
+
+.Sink {
+  background-color: rgb(147,86,19);
+}
