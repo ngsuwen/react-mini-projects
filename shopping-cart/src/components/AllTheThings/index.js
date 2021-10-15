@@ -1,11 +1,11 @@
 import React from 'react';
 
 function AllTheThings(props) {
-  const callback=()=>{
+  const add=()=>{
     props.addToCart([... props.cart, `${props.name} - $${props.price}`])
   }
   return (
-        <li onClick={callback}> {`${props.name} - $${props.price}`}</li>
+        <li onClick={add}> {`${props.name} - $${props.price}`}<br/> {props.description} </li>
   );
 }
 

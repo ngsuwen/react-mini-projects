@@ -11,12 +11,12 @@ export default function App() {
   const [products, setProducts] = useState(productsArr);
   const [cart, setCart] = useState([]);
   
-  const productsMap = productsArr.map((product, index)=>{
-    return <AllTheThings key={index} name={product.name} price={product.price} addToCart={setCart} cart={cart}/>
+  const productsMap = products.map((product, index)=>{
+    return <AllTheThings key={index} name={product.name} price={product.price} description={product.description} addToCart={setCart} cart={cart}/>
   })
   
   const cartMap = cart.map((product, index)=>{
-    return <MyShoppingCart key={index} list={product}/>
+    return <MyShoppingCart key={index} list={product} removeFromCart={setCart} cart={cart}/>
   })
 
   // create an addToCart function that takes in a product as a param
@@ -28,7 +28,7 @@ export default function App() {
   return (
     <div className="App">
       <h1>Big Time Shopping</h1>
-      <Form />
+      <Form addToList={setProducts} list={products}/>
       <div className="products">
       <div className="AllTheThings">
         <h2>Put these in your cart!</h2>
