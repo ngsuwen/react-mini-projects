@@ -1,0 +1,27 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width:100%;
+}
+
+.colored-div {
+	flex-grow: 1;
+	flex-basis: 150px;
+  height: 150px;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.colored-divs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* @media screen and (min-width: 1024px) {
+  .colored-div {
+    flex:1;
+  }
+} */
