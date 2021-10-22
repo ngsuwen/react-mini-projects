@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/styles.css"],"names":[],"mappings":"AAGA,KAEI,iBACF","file":"main.ba32df22.chunk.css","sourcesContent":["/* @import url(https://unpkg.com/nes.css/css/nes.css);\r\n@import url(https://fonts.googleapis.com/css?family=Press+Start+2P); */\r\n\r\nbody {\r\n    /* font-family: \"Press Start 2P\", cursive; */\r\n    text-align: center;\r\n  }"]}
