@@ -17,3 +17,4 @@
 | useReducer  | [Light Levels](https://github.com/ngsuwen/react-mini-projects/tree/main/light-levels)   | [Live Demo](https://ngsuwen.github.io/react-mini-projects/light-levels/build/)|
 | useReducer  | [Shopping Cart (Refactor)](https://github.com/ngsuwen/react-mini-projects/tree/main/shopping-cart-refactor)   | [Live Demo](https://ngsuwen.github.io/react-mini-projects/shopping-cart-refactor/build/)|
 | Router  | [Dentist](https://github.com/ngsuwen/react-mini-projects/tree/main/dentist)   | [Live Demo](https://ngsuwen.github.io/react-mini-projects/dentist/build/)|
+| Router  | [iStock](https://github.com/ngsuwen/react-mini-projects/tree/main/istock)   | [Live Demo](https://ngsuwen.github.io/react-mini-projects/istock/build/)|
