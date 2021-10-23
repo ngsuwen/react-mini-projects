@@ -1,4 +1,4 @@
-# GA Lab: Shopping Cart
+# GA Lab: Shopping Cart - Refactor
 https://ngsuwen.github.io/react-mini-projects/shopping-cart/build/
 ## Technologies
-* **ReactJS** - Lifting State, Controlled Form
+* **ReactJS** - useReducer

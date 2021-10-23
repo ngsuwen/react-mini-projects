@@ -1,39 +1,47 @@
-// import useState
-import React, { useState, useReducer } from 'react';
+import React, { useReducer } from 'react';
 import './styles.css';
 import AllTheThings from './components/AllTheThings';
 import MyShoppingCart from './components/MyShoppingCart';
 import Form from './components/Form';
 import productsArr from './products';
 
-const cartReducer=(state,action)=>{
+const listReducer=(state,action)=>{
   switch(action.type){
     case 'ADD': 
-      return state = [...state, action.payload];
+      return state = {
+        ...state, 
+        cart: [...state.cart,action.payload]
+      };
     case 'REMOVE': 
-      const indexFound = state.findIndex((item)=>(item==action.payload))
-      return state = state.filter((item, index)=>index!==indexFound);
+      const indexFound = state.cart.findIndex((item)=>(item===action.payload))
+      return state = {
+        ...state,
+        cart: state.cart.filter((item, index)=>index!==indexFound)
+      };
+    case 'SUBMIT': 
+      return state = {
+        ...state, 
+        prod: [action.payload,...state.prod]
+      };
     default: 
       return state;
   }
 }
 
 export default function App() {
-  const [products, setProducts] = useState(productsArr);
-  const [cart, cartDispatch] = useReducer(cartReducer, [])
+  const [list, listDispatch] = useReducer(listReducer, {prod:productsArr, cart:[]})
   
-  const productsMap = products.map((product, index)=>{
-    return <AllTheThings key={index} name={product.name} price={product.price} description={product.description} addToCart={cartDispatch}/>
-  })
-  
-  const cartMap = cart.map((product, index)=>{
-    return <MyShoppingCart key={index} list={product} removeFromCart={cartDispatch}/>
+  const productsMap = list.prod.map((product, index)=>{
+    return <AllTheThings key={index} name={product.name} price={product.price} description={product.description} addToCart={listDispatch}/>
+  }) 
+  const cartMap = list.cart.map((product, index)=>{
+    return <MyShoppingCart key={index} list={product} removeFromCart={listDispatch}/>
   })
 
   return (
     <div className="App">
       <h1>Big Time Shopping</h1>
-      <Form addToList={setProducts} list={products}/>
+      <Form addToList={listDispatch}/>
       <div className="products">
       <div className="AllTheThings">
         <h2>Put these in your cart!</h2>

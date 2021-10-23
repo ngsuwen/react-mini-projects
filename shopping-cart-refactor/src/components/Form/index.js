@@ -9,7 +9,7 @@ function Form(props) {
 
   const callback=()=>{
     if (validatePrice(state.price) && validateName(state.name) && validateDescription(state.description)){
-      return props.addToList([state, ... props.list])
+      return props.addToList({type:'SUBMIT', payload:state})
     }
   }
   const changeHandler=(event)=>{
