@@ -16,3 +16,4 @@
 | useReducer  | [Counter](https://github.com/ngsuwen/react-mini-projects/tree/main/counter)   | [Live Demo](https://ngsuwen.github.io/react-mini-projects/counter/build/)|
 | useReducer  | [Light Levels](https://github.com/ngsuwen/react-mini-projects/tree/main/light-levels)   | [Live Demo](https://ngsuwen.github.io/react-mini-projects/light-levels/build/)|
 | useReducer  | [Shopping Cart (Refactor)](https://github.com/ngsuwen/react-mini-projects/tree/main/shopping-cart-refactor)   | [Live Demo](https://ngsuwen.github.io/react-mini-projects/shopping-cart-refactor/build/)|
+| Router  | [Dentist](https://github.com/ngsuwen/react-mini-projects/tree/main/dentist)   | [Live Demo](https://ngsuwen.github.io/react-mini-projects/dentist/build/)|
