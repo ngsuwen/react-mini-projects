@@ -7,7 +7,7 @@ const Stock = (props) => {
   return (
     <div>
     {i!==-1?<>
-      <h3>Name: {props.list[i].name}</h3>
+      <h3>Name: {props.list[i].symbol}</h3>
       <h3 className="price">Price: {props.list[i].price}</h3></>
       :''}
     </div>
